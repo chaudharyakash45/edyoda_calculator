@@ -1,0 +1,66 @@
+package akashclass;
+
+
+
+public class main {
+
+    
+
+   
+
+
+
+abstract class Parent{
+
+
+
+    public abstract void message(); 
+
+} 
+
+
+
+class subclass1 extends Parent{
+
+    
+
+    @Override
+
+    public void message(){
+
+        System.out.println("This is first subclass: ");
+
+    }
+
+}
+
+
+
+class subclass2 extends Parent{
+
+    @Override
+
+    public void message(){
+
+        System.out.println("This is Second subclass: ");
+
+    }
+
+}
+ public static void main(String[] args) {
+ 
+
+          System.out.println("welcome to abstract overidden void classes")
+
+        subclass1 printAbstract1 = new subclass1();
+
+        printAbstract1.message();
+
+        
+
+        subclass printAbstract2 = new subclass2();
+
+        printAbstract2.message();
+
+    }
+}
