@@ -1,0 +1,79 @@
+
+public java.util.Scanner;
+
+
+abstract class  Marks {
+
+   public abstract float getPercentage();
+
+}
+
+class A extends Marks{
+
+   int marks1, marks2, marks3;
+
+   A(int mA1, int mA2, int mA3){
+
+       marks1=mA1;
+
+       marks2=mA2;
+
+       marks3=mA3;
+
+   }
+
+   public float getPercentage(){
+
+       float total=((marks1+marks2+marks3)/(float)300)*100;
+
+       return total;
+
+   }
+
+}
+
+class B extends Marks{
+
+   int marks1, marks2, marks3, marks4;
+
+   B(int mA1, int mA2, int mA3, int mA4){
+
+       marks1=mA1;
+
+       marks2=mA2;
+
+       marks3=mA3;
+
+       marks4=mA4;
+
+   }
+
+   public float getPercentage(){
+
+       float total=((marks1+marks2+marks3+marks4)/(float)400)*100;
+
+       return total;
+
+   }
+
+}
+ public class Main
+
+{
+
+
+public static void main(String[] args) {
+      
+         System.out.println("the number is being calculated from out of 100")
+
+    A a = new A(70, 50, 100);
+
+       System.out.println("the percentage of 3 subjects are: "a.getPercentage());
+
+       B b = new B(90, 75, 64, 86);
+
+       System.out.println("the percentage of four subject is:"b.getPercentage());
+
+}
+
+}
